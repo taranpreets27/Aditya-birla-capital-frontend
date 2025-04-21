@@ -4,9 +4,9 @@ import { fetchHeaderData } from "@/services/header.service";
 import _get from "lodash/get";
 import Footer from "@/components/Footer/Footer";
 import { fetchFooterData } from "@/services/footer.service";
-import { Anek_Latin } from "next/font/google";
+// import { Anek_Latin } from "next/font/google";
 
-const anekLatin = Anek_Latin({ subsets: ["latin"] });
+// const anekLatin = Anek_Latin({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Aditya Birla capital",
@@ -28,7 +28,7 @@ export default async function RootLayout({ children }) {
       </head>
       <body
         suppressHydrationWarning
-        className={`${anekLatin.className} antialiased`}
+        className={`antialiased`}
       >
         <Header headerData={headerData} />
         {children}
